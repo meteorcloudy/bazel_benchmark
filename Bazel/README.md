@@ -12,7 +12,7 @@
 ```sh
 $ bazel clean --expunge
 $ bazel build --profile=<platform>-Bazel.profile //src:bazel
-bazel analyze-profile --html --html_details --html_histograms ./<platform>-Bazel.profile
+$ bazel analyze-profile --html --html_details --html_histograms ./<platform>-Bazel.profile
 ```
 
 # Result
