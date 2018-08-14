@@ -1,21 +1,21 @@
-# Linux
+# Specs
+
+* TensorFlow version: r1.10
+
+* Bazel version: 0.15.2
+
+* Linux machine: SSD, 32GB RAM, 12 cores
+
+* Windows machine: SSD, 32GB RAM, 12 cores
+
+# Command
 
 ```sh
 $ yes "" | ./configure
 $ bazel clean --expunge
 $ bazel shutdown
-$ bazel build --config=opt --distinct_host_configuration=false --profile=./Linux-TensorFlow.profile //tensorflow/tools/pip_package:build_pip_package
-$ bazel analyze-profile --html --html_details --html_histograms ./Linux-TensorFlow.profile
-```
-
-# Windows
-
-```sh
-$ yes "" | ./configure
-$ bazel clean --expunge
-$ bazel shutdown
-$ bazel build --config=opt --distinct_host_configuration=false --profile=./Windows-TensorFlow-<>.profile //tensorflow/tools/pip_package:build_pip_package
-$ bazel analyze-profile --html --html_details --html_histograms ./Windows-TensorFlow-<>.profile
+$ bazel build --config=opt --distinct_host_configuration=false --profile=./<platform>-TensorFlow.profile //tensorflow/tools/pip_package:build_pip_package
+$ bazel analyze-profile --html --html_details --html_histograms ./<platform>-TensorFlow.profile
 ```
 
 # Result
