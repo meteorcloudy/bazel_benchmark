@@ -7,7 +7,7 @@
 * Windows machine: SSD, 32GB RAM, 12 cores
 
 
-#Command
+# Command
 
 ```sh
 $ bazel clean --expunge
