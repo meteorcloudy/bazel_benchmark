@@ -1,6 +1,6 @@
 # Specs
 
-* Bazel repo: 761560c2dc9af357a8457ac85e05208a4ebde48b
+* Angular repo: bbb3f8fa60d5937f3a914a1a9fb498d9a5e970b2
 
 * Bazel version: 0.15.2
 
