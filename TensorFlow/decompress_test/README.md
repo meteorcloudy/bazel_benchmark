@@ -39,7 +39,8 @@ sys     0m1.060s
 
 -----------------------------------------------------------------------------------------------------------
 
-Run `bazel build --config=opt --distinct_host_configuration=false --profile=./<platform>-TensorFlow.profile //tensorflow/tools/pip_package:build_pip_package`
+bazel version 0.15.2
+Run `bazel build --config=opt --distinct_host_configuration=false --profile=./<platform>-TensorFlow.profile //tensorflow/tools/pip_package:build_pip_package --nobuild`
 
 # With Windows Defender:
 
