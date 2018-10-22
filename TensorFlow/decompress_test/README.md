@@ -44,24 +44,30 @@ Run `bazel build --config=opt --distinct_host_configuration=false --profile=./<p
 
 # With Windows Defender:
 
+```
 INFO: Analysed target //tensorflow/tools/pip_package:build_pip_package (262 packages loaded).
 INFO: Found 1 target...
 INFO: Elapsed time: 138.772s
 INFO: 0 processes.
 INFO: Build completed successfully, 0 total actions
+```
 
 # Without Windows Defender (C:/src):
 
+```
 INFO: Analysed target //tensorflow/tools/pip_package:build_pip_package (262 packages loaded).
 INFO: Found 1 target...
 INFO: Elapsed time: 65.741s
 INFO: 0 processes.
 INFO: Build completed successfully, 0 total actions
+```
 
 # Linux:
 
+```
 INFO: Analysed target //tensorflow/tools/pip_package:build_pip_package (309 packages loaded).
 INFO: Found 1 target...
 INFO: Elapsed time: 6.973s
 INFO: 0 processes.
 INFO: Build completed successfully, 0 total actions
+```
