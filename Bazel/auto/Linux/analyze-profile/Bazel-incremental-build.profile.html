@@ -1,0 +1,693 @@
+
+<html>
+  <head>
+    <title>bazel profile for /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88 at Tue Jan 08 17:30:16 CET 2019, build ID: 5034d937-f312-474d-9b45-f60cfeb85950</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["corechart","table"]});
+      google.setOnLoadCallback(drawVisualization);
+      function drawVisualization() {
+var statsDiv = document.getElementById('user_function_stats');
+statsDiv.innerHTML = '<i>No relevant function calls to display. Some minor builtin functions may have been ignored because their names could not be used as variables in JavaScript.</i>'
+var statsDiv = document.getElementById('compiled_function_stats');
+statsDiv.innerHTML = '<i>No relevant function calls to display. Some minor builtin functions may have been ignored because their names could not be used as variables in JavaScript.</i>'
+var statsDiv = document.getElementById('builtin_function_stats');
+statsDiv.innerHTML = '<i>No relevant function calls to display. Some minor builtin functions may have been ignored because their names could not be used as variables in JavaScript.</i>'
+      }
+    </script><style type="text/css"><!--
+body { font-family: Sans; }
+div.shade-even { position:absolute; border: 0px; background-color:#dddddd }
+div.shade-odd { position:absolute; border: 0px; background-color:#eeeeee }
+div.Analyze_dependencies-border { position:absolute; border:1px solid grey; background-color:rgba(207,207,255,0.247059) }
+div.Analyze_dependencies-highlight { position:absolute; border:1px solid red; background-color:rgba(207,207,255,0.247059) }
+div.Analyze_dependencies { position:absolute; border:0px; margin:1px; background-color:rgba(207,207,255,0.247059) }
+div.Analyze_licenses-border { position:absolute; border:1px solid grey; background-color:rgba(207,255,255,0.247059) }
+div.Analyze_licenses-highlight { position:absolute; border:1px solid red; background-color:rgba(207,255,255,0.247059) }
+div.Analyze_licenses { position:absolute; border:0px; margin:1px; background-color:rgba(207,255,255,0.247059) }
+div.Build_artifacts-border { position:absolute; border:1px solid grey; background-color:rgba(255,207,207,0.247059) }
+div.Build_artifacts-highlight { position:absolute; border:1px solid red; background-color:rgba(255,207,207,0.247059) }
+div.Build_artifacts { position:absolute; border:0px; margin:1px; background-color:rgba(255,207,207,0.247059) }
+div.Complete_build-border { position:absolute; border:1px solid grey; background-color:rgba(255,207,255,0.247059) }
+div.Complete_build-highlight { position:absolute; border:1px solid red; background-color:rgba(255,207,255,0.247059) }
+div.Complete_build { position:absolute; border:0px; margin:1px; background-color:rgba(255,207,255,0.247059) }
+div.Initialize_command-border { position:absolute; border:1px solid grey; background-color:rgba(159,159,207,0.247059) }
+div.Initialize_command-highlight { position:absolute; border:1px solid red; background-color:rgba(159,159,207,0.247059) }
+div.Initialize_command { position:absolute; border:0px; margin:1px; background-color:rgba(159,159,207,0.247059) }
+div.Launch_Blaze-border { position:absolute; border:1px solid grey; background-color:rgba(159,207,159,0.247059) }
+div.Launch_Blaze-highlight { position:absolute; border:1px solid red; background-color:rgba(159,207,159,0.247059) }
+div.Launch_Blaze { position:absolute; border:0px; margin:1px; background-color:rgba(159,207,159,0.247059) }
+div.Load_packages-border { position:absolute; border:1px solid grey; background-color:rgba(207,255,207,0.247059) }
+div.Load_packages-highlight { position:absolute; border:1px solid red; background-color:rgba(207,255,207,0.247059) }
+div.Load_packages { position:absolute; border:0px; margin:1px; background-color:rgba(207,255,207,0.247059) }
+div.Local_parse_to_prepare_for_remote_execution-border { position:absolute; border:1px solid grey; background-color:rgba(102,153,204,1.000000) }
+div.Local_parse_to_prepare_for_remote_execution-highlight { position:absolute; border:1px solid red; background-color:rgba(102,153,204,1.000000) }
+div.Local_parse_to_prepare_for_remote_execution { position:absolute; border:0px; margin:1px; background-color:rgba(102,153,204,1.000000) }
+div.Prepare_for_build-border { position:absolute; border:1px solid grey; background-color:rgba(255,255,207,0.247059) }
+div.Prepare_for_build-highlight { position:absolute; border:1px solid red; background-color:rgba(255,255,207,0.247059) }
+div.Prepare_for_build { position:absolute; border:0px; margin:1px; background-color:rgba(255,255,207,0.247059) }
+div.Remote_execution_file_fetching-border { position:absolute; border:1px solid grey; background-color:rgba(187,153,204,1.000000) }
+div.Remote_execution_file_fetching-highlight { position:absolute; border:1px solid red; background-color:rgba(187,153,204,1.000000) }
+div.Remote_execution_file_fetching { position:absolute; border:0px; margin:1px; background-color:rgba(187,153,204,1.000000) }
+div.Remote_execution_process_wall_time-border { position:absolute; border:1px solid grey; background-color:rgba(249,153,204,1.000000) }
+div.Remote_execution_process_wall_time-highlight { position:absolute; border:1px solid red; background-color:rgba(249,153,204,1.000000) }
+div.Remote_execution_process_wall_time { position:absolute; border:0px; margin:1px; background-color:rgba(249,153,204,1.000000) }
+div.Remote_execution_queuing_time-border { position:absolute; border:1px solid grey; background-color:rgba(204,102,0,1.000000) }
+div.Remote_execution_queuing_time-highlight { position:absolute; border:1px solid red; background-color:rgba(204,102,0,1.000000) }
+div.Remote_execution_queuing_time { position:absolute; border:0px; margin:1px; background-color:rgba(204,102,0,1.000000) }
+div.Remote_execution_setup-border { position:absolute; border:1px solid grey; background-color:rgba(169,153,204,1.000000) }
+div.Remote_execution_setup-highlight { position:absolute; border:1px solid red; background-color:rgba(169,153,204,1.000000) }
+div.Remote_execution_setup { position:absolute; border:0px; margin:1px; background-color:rgba(169,153,204,1.000000) }
+div.Remote_execution_upload_time-border { position:absolute; border:1px solid grey; background-color:rgba(102,153,204,1.000000) }
+div.Remote_execution_upload_time-highlight { position:absolute; border:1px solid red; background-color:rgba(102,153,204,1.000000) }
+div.Remote_execution_upload_time { position:absolute; border:0px; margin:1px; background-color:rgba(102,153,204,1.000000) }
+div.Staging_per-action_file_system-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.Staging_per-action_file_system-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.Staging_per-action_file_system { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.Starlark_Parser-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.Starlark_Parser-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.Starlark_Parser { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.Starlark_builtin_function_call-border { position:absolute; border:1px solid grey; background-color:rgba(153,0,51,1.000000) }
+div.Starlark_builtin_function_call-highlight { position:absolute; border:1px solid red; background-color:rgba(153,0,51,1.000000) }
+div.Starlark_builtin_function_call { position:absolute; border:0px; margin:1px; background-color:rgba(153,0,51,1.000000) }
+div.Starlark_compiled_user_function_call-border { position:absolute; border:1px solid grey; background-color:rgba(204,0,51,1.000000) }
+div.Starlark_compiled_user_function_call-highlight { position:absolute; border:1px solid red; background-color:rgba(204,0,51,1.000000) }
+div.Starlark_compiled_user_function_call { position:absolute; border:0px; margin:1px; background-color:rgba(204,0,51,1.000000) }
+div.Starlark_user_function_call-border { position:absolute; border:1px solid grey; background-color:rgba(51,255,205,1.000000) }
+div.Starlark_user_function_call-highlight { position:absolute; border:1px solid red; background-color:rgba(51,255,205,1.000000) }
+div.Starlark_user_function_call { position:absolute; border:0px; margin:1px; background-color:rgba(51,255,205,1.000000) }
+div.Unknown_event-border { position:absolute; border:1px solid grey; background-color:rgba(51,153,102,1.000000) }
+div.Unknown_event-highlight { position:absolute; border:1px solid red; background-color:rgba(51,153,102,1.000000) }
+div.Unknown_event { position:absolute; border:0px; margin:1px; background-color:rgba(51,153,102,1.000000) }
+div.VFS_delete-border { position:absolute; border:1px solid grey; background-color:rgba(255,204,0,1.000000) }
+div.VFS_delete-highlight { position:absolute; border:1px solid red; background-color:rgba(255,204,0,1.000000) }
+div.VFS_delete { position:absolute; border:0px; margin:1px; background-color:rgba(255,204,0,1.000000) }
+div.VFS_md5-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,153,1.000000) }
+div.VFS_md5-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,153,1.000000) }
+div.VFS_md5 { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,153,1.000000) }
+div.VFS_open-border { position:absolute; border:1px solid grey; background-color:rgba(0,153,153,1.000000) }
+div.VFS_open-highlight { position:absolute; border:1px solid red; background-color:rgba(0,153,153,1.000000) }
+div.VFS_open { position:absolute; border:0px; margin:1px; background-color:rgba(0,153,153,1.000000) }
+div.VFS_read-border { position:absolute; border:1px solid grey; background-color:rgba(153,204,51,1.000000) }
+div.VFS_read-highlight { position:absolute; border:1px solid red; background-color:rgba(153,204,51,1.000000) }
+div.VFS_read { position:absolute; border:0px; margin:1px; background-color:rgba(153,204,51,1.000000) }
+div.VFS_readdir-border { position:absolute; border:1px solid grey; background-color:rgba(0,102,204,1.000000) }
+div.VFS_readdir-highlight { position:absolute; border:1px solid red; background-color:rgba(0,102,204,1.000000) }
+div.VFS_readdir { position:absolute; border:0px; margin:1px; background-color:rgba(0,102,204,1.000000) }
+div.VFS_readlink-border { position:absolute; border:1px solid grey; background-color:rgba(153,204,204,1.000000) }
+div.VFS_readlink-highlight { position:absolute; border:1px solid red; background-color:rgba(153,204,204,1.000000) }
+div.VFS_readlink { position:absolute; border:0px; margin:1px; background-color:rgba(153,204,204,1.000000) }
+div.VFS_stat-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,255,1.000000) }
+div.VFS_stat-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,255,1.000000) }
+div.VFS_stat { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,255,1.000000) }
+div.VFS_write-border { position:absolute; border:1px solid grey; background-color:rgba(255,153,0,1.000000) }
+div.VFS_write-highlight { position:absolute; border:1px solid red; background-color:rgba(255,153,0,1.000000) }
+div.VFS_write { position:absolute; border:0px; margin:1px; background-color:rgba(255,153,0,1.000000) }
+div.VFS_xattr-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,221,1.000000) }
+div.VFS_xattr-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,221,1.000000) }
+div.VFS_xattr { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,221,1.000000) }
+div.VMFS_read-border { position:absolute; border:1px solid grey; background-color:rgba(153,204,51,1.000000) }
+div.VMFS_read-highlight { position:absolute; border:1px solid red; background-color:rgba(153,204,51,1.000000) }
+div.VMFS_read { position:absolute; border:0px; margin:1px; background-color:rgba(153,204,51,1.000000) }
+div.VMFS_readdir-border { position:absolute; border:1px solid grey; background-color:rgba(0,102,204,1.000000) }
+div.VMFS_readdir-highlight { position:absolute; border:1px solid red; background-color:rgba(0,102,204,1.000000) }
+div.VMFS_readdir { position:absolute; border:0px; margin:1px; background-color:rgba(0,102,204,1.000000) }
+div.VMFS_stat-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,255,1.000000) }
+div.VMFS_stat-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,255,1.000000) }
+div.VMFS_stat { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,255,1.000000) }
+div.action_dependency_checking-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,51,1.000000) }
+div.action_dependency_checking-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,51,1.000000) }
+div.action_dependency_checking { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,51,1.000000) }
+div.action_execution-border { position:absolute; border:1px solid grey; background-color:rgba(153,204,255,1.000000) }
+div.action_execution-highlight { position:absolute; border:1px solid red; background-color:rgba(153,204,255,1.000000) }
+div.action_execution { position:absolute; border:0px; margin:1px; background-color:rgba(153,204,255,1.000000) }
+div.action_graph_dependency-border { position:absolute; border:1px solid grey; background-color:rgba(51,153,255,1.000000) }
+div.action_graph_dependency-highlight { position:absolute; border:1px solid red; background-color:rgba(51,153,255,1.000000) }
+div.action_graph_dependency { position:absolute; border:0px; margin:1px; background-color:rgba(51,153,255,1.000000) }
+div.action_processing-border { position:absolute; border:1px solid grey; background-color:rgba(102,102,153,1.000000) }
+div.action_processing-highlight { position:absolute; border:1px solid red; background-color:rgba(102,102,153,1.000000) }
+div.action_processing { position:absolute; border:0px; margin:1px; background-color:rgba(102,102,153,1.000000) }
+div.action_resource_lock-border { position:absolute; border:1px solid grey; background-color:rgba(204,153,51,1.000000) }
+div.action_resource_lock-highlight { position:absolute; border:1px solid red; background-color:rgba(204,153,51,1.000000) }
+div.action_resource_lock { position:absolute; border:0px; margin:1px; background-color:rgba(204,153,51,1.000000) }
+div.action_resource_release-border { position:absolute; border:1px solid grey; background-color:rgba(0,102,102,1.000000) }
+div.action_resource_release-highlight { position:absolute; border:1px solid red; background-color:rgba(0,102,102,1.000000) }
+div.action_resource_release { position:absolute; border:0px; margin:1px; background-color:rgba(0,102,102,1.000000) }
+div.build_phase_marker-border { position:absolute; border:1px solid grey; background-color:rgba(51,102,153,1.000000) }
+div.build_phase_marker-highlight { position:absolute; border:1px solid red; background-color:rgba(51,102,153,1.000000) }
+div.build_phase_marker { position:absolute; border:0px; margin:1px; background-color:rgba(51,102,153,1.000000) }
+div.complete_action_execution-border { position:absolute; border:1px solid grey; background-color:rgba(204,204,153,1.000000) }
+div.complete_action_execution-highlight { position:absolute; border:1px solid red; background-color:rgba(204,204,153,1.000000) }
+div.complete_action_execution { position:absolute; border:0px; margin:1px; background-color:rgba(204,204,153,1.000000) }
+div.configured_target_creation-border { position:absolute; border:1px solid grey; background-color:rgba(102,51,0,1.000000) }
+div.configured_target_creation-highlight { position:absolute; border:1px solid red; background-color:rgba(102,51,0,1.000000) }
+div.configured_target_creation { position:absolute; border:0px; margin:1px; background-color:rgba(102,51,0,1.000000) }
+div.construct_include_paths-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.construct_include_paths-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.construct_include_paths { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.cpu_counters-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.cpu_counters-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.cpu_counters { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.critical_path-border { position:absolute; border:1px solid grey; background-color:rgba(102,102,153,1.000000) }
+div.critical_path-highlight { position:absolute; border:1px solid red; background-color:rgba(102,102,153,1.000000) }
+div.critical_path { position:absolute; border:0px; margin:1px; background-color:rgba(102,102,153,1.000000) }
+div.critical_path_component-border { position:absolute; border:1px solid grey; background-color:rgba(102,102,153,1.000000) }
+div.critical_path_component-highlight { position:absolute; border:1px solid red; background-color:rgba(102,102,153,1.000000) }
+div.critical_path_component { position:absolute; border:0px; margin:1px; background-color:rgba(102,102,153,1.000000) }
+div.exception-border { position:absolute; border:1px solid grey; background-color:rgba(255,204,102,1.000000) }
+div.exception-highlight { position:absolute; border:1px solid red; background-color:rgba(255,204,102,1.000000) }
+div.exception { position:absolute; border:0px; margin:1px; background-color:rgba(255,204,102,1.000000) }
+div.execution_queue_submission-border { position:absolute; border:1px solid grey; background-color:rgba(204,51,153,1.000000) }
+div.execution_queue_submission-highlight { position:absolute; border:1px solid red; background-color:rgba(204,51,153,1.000000) }
+div.execution_queue_submission { position:absolute; border:0px; margin:1px; background-color:rgba(204,51,153,1.000000) }
+div.for_testing_only-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.for_testing_only-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.for_testing_only { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.gc_notification-border { position:absolute; border:1px solid grey; background-color:rgba(153,102,51,1.000000) }
+div.gc_notification-highlight { position:absolute; border:1px solid red; background-color:rgba(153,102,51,1.000000) }
+div.gc_notification { position:absolute; border:0px; margin:1px; background-color:rgba(153,102,51,1.000000) }
+div.general_information-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,102,1.000000) }
+div.general_information-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,102,1.000000) }
+div.general_information { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,102,1.000000) }
+div.globbing-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,102,1.000000) }
+div.globbing-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,102,1.000000) }
+div.globbing { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,102,1.000000) }
+div.include_scanner-border { position:absolute; border:1px solid grey; background-color:rgba(102,153,153,1.000000) }
+div.include_scanner-highlight { position:absolute; border:1px solid red; background-color:rgba(102,153,153,1.000000) }
+div.include_scanner { position:absolute; border:0px; margin:1px; background-color:rgba(102,153,153,1.000000) }
+div.inclusion_parse-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.inclusion_parse-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.inclusion_parse { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.local_action_execution-border { position:absolute; border:1px solid grey; background-color:rgba(204,204,204,1.000000) }
+div.local_action_execution-highlight { position:absolute; border:1px solid red; background-color:rgba(204,204,204,1.000000) }
+div.local_action_execution { position:absolute; border:0px; margin:1px; background-color:rgba(204,204,204,1.000000) }
+div.local_process_spawn-border { position:absolute; border:1px solid grey; background-color:rgba(102,51,102,1.000000) }
+div.local_process_spawn-highlight { position:absolute; border:1px solid red; background-color:rgba(102,51,102,1.000000) }
+div.local_process_spawn { position:absolute; border:0px; margin:1px; background-color:rgba(102,51,102,1.000000) }
+div.locate_relative-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.locate_relative-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.locate_relative { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.loop_output_artifacts-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.loop_output_artifacts-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.loop_output_artifacts { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.package_creation-border { position:absolute; border:1px solid grey; background-color:rgba(102,153,204,1.000000) }
+div.package_creation-highlight { position:absolute; border:1px solid red; background-color:rgba(102,153,204,1.000000) }
+div.package_creation { position:absolute; border:0px; margin:1px; background-color:rgba(102,153,204,1.000000) }
+div.package_validity_check-border { position:absolute; border:1px solid grey; background-color:rgba(51,102,153,1.000000) }
+div.package_validity_check-highlight { position:absolute; border:1px solid red; background-color:rgba(51,102,153,1.000000) }
+div.package_validity_check { position:absolute; border:0px; margin:1px; background-color:rgba(51,102,153,1.000000) }
+div.parallel_builder_completion_queue-border { position:absolute; border:1px solid grey; background-color:rgba(204,51,153,1.000000) }
+div.parallel_builder_completion_queue-highlight { position:absolute; border:1px solid red; background-color:rgba(204,51,153,1.000000) }
+div.parallel_builder_completion_queue { position:absolute; border:0px; margin:1px; background-color:rgba(204,51,153,1.000000) }
+div.parse_and_hints_results-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.parse_and_hints_results-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.parse_and_hints_results { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.process_results_and_enqueue-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.process_results_and_enqueue-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.process_results_and_enqueue { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.process_scan-border { position:absolute; border:1px solid grey; background-color:rgba(0,0,0,1.000000) }
+div.process_scan-highlight { position:absolute; border:1px solid red; background-color:rgba(0,0,0,1.000000) }
+div.process_scan { position:absolute; border:0px; margin:1px; background-color:rgba(0,0,0,1.000000) }
+div.remote_action_execution-border { position:absolute; border:1px solid grey; background-color:rgba(153,153,204,1.000000) }
+div.remote_action_execution-highlight { position:absolute; border:1px solid red; background-color:rgba(153,153,204,1.000000) }
+div.remote_action_execution { position:absolute; border:0px; margin:1px; background-color:rgba(153,153,204,1.000000) }
+div.skyframe_evaluator-border { position:absolute; border:1px solid grey; background-color:rgba(204,153,0,1.000000) }
+div.skyframe_evaluator-highlight { position:absolute; border:1px solid red; background-color:rgba(204,153,0,1.000000) }
+div.skyframe_evaluator { position:absolute; border:0px; margin:1px; background-color:rgba(204,153,0,1.000000) }
+div.skyfunction-border { position:absolute; border:1px solid grey; background-color:rgba(204,102,0,1.000000) }
+div.skyfunction-highlight { position:absolute; border:1px solid red; background-color:rgba(204,102,0,1.000000) }
+div.skyfunction { position:absolute; border:0px; margin:1px; background-color:rgba(204,102,0,1.000000) }
+div.thread_name-border { position:absolute; border:1px solid grey; background-color:rgba(153,102,0,1.000000) }
+div.thread_name-highlight { position:absolute; border:1px solid red; background-color:rgba(153,102,0,1.000000) }
+div.thread_name { position:absolute; border:0px; margin:1px; background-color:rgba(153,102,0,1.000000) }
+div.thread_wait-border { position:absolute; border:1px solid grey; background-color:rgba(102,204,204,1.000000) }
+div.thread_wait-highlight { position:absolute; border:1px solid red; background-color:rgba(102,204,204,1.000000) }
+div.thread_wait { position:absolute; border:0px; margin:1px; background-color:rgba(102,204,204,1.000000) }
+div.update_action_information-border { position:absolute; border:1px solid grey; background-color:rgba(153,51,0,1.000000) }
+div.update_action_information-highlight { position:absolute; border:1px solid red; background-color:rgba(153,51,0,1.000000) }
+div.update_action_information { position:absolute; border:0px; margin:1px; background-color:rgba(153,51,0,1.000000) }
+--></style>
+
+<style type="text/css"><!--
+  div.phase-statistics {
+    margin: 0 10;
+    font-size: small;
+    font-family: monospace;
+    float: left;
+  }
+  table.phase-statistics {
+    border: 0px; text-align: right;
+  }
+  table.phase-statistics td {
+    padding: 0 5;
+  }
+  td.left {
+    text-align: left;
+  }
+  td.center {
+    text-align: center;
+  }
+--></style>
+<style type="text/css"><!--
+  div.starlark-histogram {
+    width: 95%; margin: 0 auto; display: none;
+  }
+  div.starlark-chart {
+    width: 100%; height: 200px; margin: 0 auto 2em;
+  }
+  div.starlark-table {
+    width: 95%; margin: 0 auto;
+  }
+  --></style>
+<script type="text/javascript">
+  var starlarkData = {};
+
+  var starlarkDataTable = {};
+
+  var histogramData;
+  function selectHandler(category) {
+    return function() {var selection = starlarkDataTable[category].getSelection();
+      if (selection.length < 1) return;
+      var item = selection[0];
+      var loc = starlarkData[category].getValue(item.row, 0);
+      var func = starlarkData[category].getValue(item.row, 1);
+      var histogramDiv = document.getElementById(category+'-histogram');
+      var chartDiv = document.getElementById(category+'-chart');
+      chartDiv.innerHTML = '<h3>' + loc + '#' + func + '</h3>';
+      chartDiv.style.height = 'auto';
+      histogramDiv.style.display = 'block';
+    }
+  };
+</script>
+  </head>
+  <body>
+    <h1>bazel profile for /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88 at Tue Jan 08 17:30:16 CET 2019, build ID: 5034d937-f312-474d-9b45-f60cfeb85950</h1><div style='position:fixed; top:1em; right:1em; z-index:50; padding: 1ex;border:1px solid #888; background-color:#eee; width:100px'><h3>Content</h3>
+<p style='text-align:left;font-size:small;margin:2px'><a href='#Tasks'>Tasks</a></p>
+<p style='text-align:left;font-size:small;margin:2px'><a href='#Legend'>Legend</a></p>
+<p style='text-align:left;font-size:small;margin:2px'><a href='#Statistics'>Statistics</a></p></div>
+<a name='Tasks'/>
+<h2 >Tasks</h2>
+<p>To get more information about a task point the mouse at one of the bars.</p>
+<div style='position:relative; height: 200px; margin: 50px'>
+<div style="position:absolute; left:-40px; top:150px; width:1002px; height:10px; font-size:7pt">800</div>
+<div class="shade-odd" title="" style="left:0px; top:150px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:40px; width:1002px; height:10px; font-size:7pt">736</div>
+<div class="shade-even" title="" style="left:0px; top:40px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:100px; width:1002px; height:10px; font-size:7pt">801</div>
+<div class="shade-even" title="" style="left:0px; top:100px; width:962px; height:10px; z-index:0"></div>
+<div class="action_processing" title="action processing: Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (491 source files) and running annotation processors (SkylarkCallableProcessor, SkylarkConfigurationFieldProcessor, AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor)" style="left:12px; top:102px; width:242px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (491 source files) and running annotation processors (SkylarkCallableProcessor, SkylarkConfigurationFieldProcessor, AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor)" style="left:12px; top:102px; width:241px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:12px; top:102px; width:242px; height:8px; z-index:20"></div>
+<div class="action_processing" title="action processing: Building deploy jar src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar" style="left:254px; top:102px; width:13px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Building deploy jar src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar" style="left:255px; top:102px; width:7px; height:8px; z-index:20"></div>
+<div class="complete_action_execution" title="complete action execution: Building deploy jar src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar" style="left:262px; top:102px; width:6px; height:8px; z-index:20"></div>
+<div class="VFS_md5" title="VFS md5: /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar" style="left:262px; top:102px; width:6px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:254px; top:102px; width:13px; height:8px; z-index:20"></div>
+<div class="action_processing" title="action processing: Executing genrule //src:install_base_key-file_jdk_allmodules" style="left:268px; top:102px; width:62px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Executing genrule //src:install_base_key-file_jdk_allmodules" style="left:268px; top:102px; width:62px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:268px; top:102px; width:62px; height:8px; z-index:20"></div>
+<div class="action_processing" title="action processing: Executing genrule //src:package-zip_jdk_allmodules" style="left:330px; top:102px; width:565px; height:8px; z-index:20"></div>
+<div class="VFS_delete" title="VFS delete: /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88/execroot/io_bazel/bazel-out/k8-fastbuild/genfiles/src/package_jdk_allmodules.zip" style="left:330px; top:102px; width:1px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Executing genrule //src:package-zip_jdk_allmodules" style="left:332px; top:102px; width:543px; height:8px; z-index:20"></div>
+<div class="complete_action_execution" title="complete action execution: Executing genrule //src:package-zip_jdk_allmodules" style="left:875px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="VFS_md5" title="VFS md5: /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88/execroot/io_bazel/bazel-out/k8-fastbuild/genfiles/src/package_jdk_allmodules.zip" style="left:875px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:330px; top:102px; width:565px; height:8px; z-index:20"></div>
+<div class="action_processing" title="action processing: Executing genrule //src:bazel-bin_jdk_allmodules" style="left:896px; top:102px; width:36px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Executing genrule //src:bazel-bin_jdk_allmodules" style="left:897px; top:102px; width:15px; height:8px; z-index:20"></div>
+<div class="complete_action_execution" title="complete action execution: Executing genrule //src:bazel-bin_jdk_allmodules" style="left:912px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="VFS_md5" title="VFS md5: /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/bazel_jdk_allmodules" style="left:912px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:896px; top:102px; width:36px; height:8px; z-index:20"></div>
+<div class="action_processing" title="action processing: Executing genrule //src:bazel-bin" style="left:932px; top:102px; width:28px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Executing genrule //src:bazel-bin" style="left:933px; top:102px; width:8px; height:8px; z-index:20"></div>
+<div class="complete_action_execution" title="complete action execution: Executing genrule //src:bazel-bin" style="left:941px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="VFS_md5" title="VFS md5: /usr/local/google/home/pcloudy/.cache/bazel/_bazel_pcloudy/3d42a5c7654876aa68e91f3b969deb88/execroot/io_bazel/bazel-out/k8-fastbuild/bin/src/bazel" style="left:941px; top:102px; width:20px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:932px; top:102px; width:29px; height:8px; z-index:20"></div>
+<div style="position:absolute; left:-40px; top:20px; width:1002px; height:10px; font-size:7pt">737</div>
+<div class="shade-even" title="" style="left:0px; top:20px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:160px; width:1002px; height:10px; font-size:7pt">802</div>
+<div class="shade-even" title="" style="left:0px; top:160px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:80px; width:1002px; height:10px; font-size:7pt">803</div>
+<div class="shade-even" title="" style="left:0px; top:80px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:10px; width:1002px; height:10px; font-size:7pt">739</div>
+<div class="shade-odd" title="" style="left:0px; top:10px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:170px; width:1002px; height:10px; font-size:7pt">804</div>
+<div class="shade-odd" title="" style="left:0px; top:170px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:70px; width:1002px; height:10px; font-size:7pt">740</div>
+<div class="shade-odd" title="" style="left:0px; top:70px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:60px; width:1002px; height:10px; font-size:7pt">741</div>
+<div class="shade-even" title="" style="left:0px; top:60px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:30px; width:1002px; height:10px; font-size:7pt">742</div>
+<div class="shade-odd" title="" style="left:0px; top:30px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:50px; width:1002px; height:10px; font-size:7pt">743</div>
+<div class="shade-odd" title="" style="left:0px; top:50px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:0px; width:1002px; height:10px; font-size:7pt">22</div>
+<div class="shade-even" title="" style="left:0px; top:0px; width:962px; height:10px; z-index:0"></div>
+<div class="general_information" title="general information: setupPackageCache" style="left:0px; top:2px; width:7px; height:8px; z-index:20"></div>
+<div class="general_information" title="general information: handleDiffs" style="left:0px; top:2px; width:7px; height:8px; z-index:20"></div>
+<div class="general_information" title="general information: fsvc.getDirtyKeys" style="left:0px; top:2px; width:6px; height:8px; z-index:20"></div>
+<div class="general_information" title="general information: runAnalysisPhase" style="left:7px; top:2px; width:1px; height:8px; z-index:20"></div>
+<div class="general_information" title="general information: detectModifiedOutputFiles" style="left:9px; top:2px; width:1px; height:8px; z-index:20"></div>
+<div class="general_information" title="general information: ParallelEvaluator.eval" style="left:11px; top:2px; width:950px; height:8px; z-index:20"></div>
+<div class="skyframe_evaluator" title="skyframe evaluator: Parallel Evaluator evaluation" style="left:11px; top:2px; width:950px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (491 source files) and running annotation processors (SkylarkCallableProcessor, SkylarkConfigurationFieldProcessor, AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor)'" style="left:12px; top:2px; width:242px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Building deploy jar src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar'" style="left:254px; top:2px; width:13px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Executing genrule //src:install_base_key-file_jdk_allmodules'" style="left:268px; top:2px; width:62px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Executing genrule //src:package-zip_jdk_allmodules'" style="left:330px; top:2px; width:565px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Executing genrule //src:bazel-bin_jdk_allmodules'" style="left:896px; top:2px; width:36px; height:8px; z-index:20"></div>
+<div class="critical_path_component" title="critical path component: action 'Executing genrule //src:bazel-bin'" style="left:932px; top:2px; width:28px; height:8px; z-index:20"></div>
+<div style="position:absolute; left:-40px; top:130px; width:1002px; height:10px; font-size:7pt">793</div>
+<div class="shade-odd" title="" style="left:0px; top:130px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:190px; width:1002px; height:10px; font-size:7pt">794</div>
+<div class="shade-odd" title="" style="left:0px; top:190px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:90px; width:1002px; height:10px; font-size:7pt">795</div>
+<div class="shade-odd" title="" style="left:0px; top:90px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:140px; width:1002px; height:10px; font-size:7pt">796</div>
+<div class="shade-even" title="" style="left:0px; top:140px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:180px; width:1002px; height:10px; font-size:7pt">797</div>
+<div class="shade-even" title="" style="left:0px; top:180px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:120px; width:1002px; height:10px; font-size:7pt">798</div>
+<div class="shade-even" title="" style="left:0px; top:120px; width:962px; height:10px; z-index:0"></div>
+<div style="position:absolute; left:-40px; top:110px; width:1002px; height:10px; font-size:7pt">799</div>
+<div class="shade-odd" title="" style="left:0px; top:110px; width:962px; height:10px; z-index:0"></div>
+<div class="action_processing" title="action processing: Compiling Java headers src/main/java/com/google/devtools/build/lib/libbuild-base-hjar.jar (491 files)" style="left:11px; top:112px; width:41px; height:8px; z-index:20"></div>
+<div class="action_execution" title="action execution: Compiling Java headers src/main/java/com/google/devtools/build/lib/libbuild-base-hjar.jar (491 files)" style="left:11px; top:112px; width:40px; height:8px; z-index:20"></div>
+<div class="skyfunction" title="skyfunction: ACTION_EXECUTION" style="left:11px; top:112px; width:41px; height:8px; z-index:20"></div>
+<div class="Initialize_command" title="build phase marker: Initialize command" style="left:0px; top:0px; width:7px; height:200px; z-index:10"></div>
+<div class="Analyze_dependencies" title="build phase marker: Analyze dependencies" style="left:7px; top:0px; width:1px; height:200px; z-index:10"></div>
+<div class="Build_artifacts" title="build phase marker: Build artifacts" style="left:9px; top:0px; width:952px; height:200px; z-index:10"></div>
+<div style="position:absolute; left:4px; top:-17px; width:50px; height:10px">0s</div>
+<div style='position: absolute; left: 0px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:54px; top:-17px; width:50px; height:10px">1s</div>
+<div style='position: absolute; left: 50px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:104px; top:-17px; width:50px; height:10px">2s</div>
+<div style='position: absolute; left: 100px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:154px; top:-17px; width:50px; height:10px">3s</div>
+<div style='position: absolute; left: 150px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:204px; top:-17px; width:50px; height:10px">4s</div>
+<div style='position: absolute; left: 200px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:254px; top:-17px; width:50px; height:10px">5s</div>
+<div style='position: absolute; left: 250px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:304px; top:-17px; width:50px; height:10px">6s</div>
+<div style='position: absolute; left: 300px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:354px; top:-17px; width:50px; height:10px">7s</div>
+<div style='position: absolute; left: 350px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:404px; top:-17px; width:50px; height:10px">8s</div>
+<div style='position: absolute; left: 400px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:454px; top:-17px; width:50px; height:10px">9s</div>
+<div style='position: absolute; left: 450px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:504px; top:-17px; width:50px; height:10px">10s</div>
+<div style='position: absolute; left: 500px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:554px; top:-17px; width:50px; height:10px">11s</div>
+<div style='position: absolute; left: 550px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:604px; top:-17px; width:50px; height:10px">12s</div>
+<div style='position: absolute; left: 600px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:654px; top:-17px; width:50px; height:10px">13s</div>
+<div style='position: absolute; left: 650px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:704px; top:-17px; width:50px; height:10px">14s</div>
+<div style='position: absolute; left: 700px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:754px; top:-17px; width:50px; height:10px">15s</div>
+<div style='position: absolute; left: 750px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:804px; top:-17px; width:50px; height:10px">16s</div>
+<div style='position: absolute; left: 800px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:854px; top:-17px; width:50px; height:10px">17s</div>
+<div style='position: absolute; left: 850px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:904px; top:-17px; width:50px; height:10px">18s</div>
+<div style='position: absolute; left: 900px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+<div style="position:absolute; left:954px; top:-17px; width:50px; height:10px">19s</div>
+<div style='position: absolute; left: 950px; top: -20px; width: 1px; height: 220px; border-left: 1px solid rgba(128,128,128,1.000000)'></div>
+</div>
+<a name='Legend'/>
+<h2 >Legend</h2>
+<div style='position:relative; height: 275px;'><div class="Analyze_dependencies-border" title="Analyze dependencies" style="left:0px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:0px; width:340px; height:20px">Analyze dependencies</div>
+<div class="Analyze_licenses-border" title="Analyze licenses" style="left:0px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:25px; width:340px; height:20px">Analyze licenses</div>
+<div class="Build_artifacts-border" title="Build artifacts" style="left:0px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:50px; width:340px; height:20px">Build artifacts</div>
+<div class="Complete_build-border" title="Complete build" style="left:0px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:75px; width:340px; height:20px">Complete build</div>
+<div class="Initialize_command-border" title="Initialize command" style="left:0px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:100px; width:340px; height:20px">Initialize command</div>
+<div class="Launch_Blaze-border" title="Launch Blaze" style="left:0px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:125px; width:340px; height:20px">Launch Blaze</div>
+<div class="Load_packages-border" title="Load packages" style="left:0px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:150px; width:340px; height:20px">Load packages</div>
+<div class="Local_parse_to_prepare_for_remote_execution-border" title="Local parse to prepare for remote execution" style="left:0px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:175px; width:340px; height:20px">Local parse to prepare for remote execution</div>
+<div class="Prepare_for_build-border" title="Prepare for build" style="left:0px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:200px; width:340px; height:20px">Prepare for build</div>
+<div class="Remote_execution_file_fetching-border" title="Remote execution file fetching" style="left:0px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:35px; top:225px; width:340px; height:20px">Remote execution file fetching</div>
+<div class="Remote_execution_process_wall_time-border" title="Remote execution process wall time" style="left:350px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:0px; width:340px; height:20px">Remote execution process wall time</div>
+<div class="Remote_execution_queuing_time-border" title="Remote execution queuing time" style="left:350px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:25px; width:340px; height:20px">Remote execution queuing time</div>
+<div class="Remote_execution_setup-border" title="Remote execution setup" style="left:350px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:50px; width:340px; height:20px">Remote execution setup</div>
+<div class="Remote_execution_upload_time-border" title="Remote execution upload time" style="left:350px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:75px; width:340px; height:20px">Remote execution upload time</div>
+<div class="Staging_per-action_file_system-border" title="Staging per-action file system" style="left:350px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:100px; width:340px; height:20px">Staging per-action file system</div>
+<div class="Starlark_Parser-border" title="Starlark Parser" style="left:350px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:125px; width:340px; height:20px">Starlark Parser</div>
+<div class="Starlark_builtin_function_call-border" title="Starlark builtin function call" style="left:350px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:150px; width:340px; height:20px">Starlark builtin function call</div>
+<div class="Starlark_compiled_user_function_call-border" title="Starlark compiled user function call" style="left:350px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:175px; width:340px; height:20px">Starlark compiled user function call</div>
+<div class="Starlark_user_function_call-border" title="Starlark user function call" style="left:350px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:200px; width:340px; height:20px">Starlark user function call</div>
+<div class="Unknown_event-border" title="Unknown event" style="left:350px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:385px; top:225px; width:340px; height:20px">Unknown event</div>
+<div class="VFS_delete-border" title="VFS delete" style="left:700px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:0px; width:340px; height:20px">VFS delete</div>
+<div class="VFS_md5-border" title="VFS md5" style="left:700px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:25px; width:340px; height:20px">VFS md5</div>
+<div class="VFS_open-border" title="VFS open" style="left:700px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:50px; width:340px; height:20px">VFS open</div>
+<div class="VFS_read-border" title="VFS read" style="left:700px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:75px; width:340px; height:20px">VFS read</div>
+<div class="VFS_readdir-border" title="VFS readdir" style="left:700px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:100px; width:340px; height:20px">VFS readdir</div>
+<div class="VFS_readlink-border" title="VFS readlink" style="left:700px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:125px; width:340px; height:20px">VFS readlink</div>
+<div class="VFS_stat-border" title="VFS stat" style="left:700px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:150px; width:340px; height:20px">VFS stat</div>
+<div class="VFS_write-border" title="VFS write" style="left:700px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:175px; width:340px; height:20px">VFS write</div>
+<div class="VFS_xattr-border" title="VFS xattr" style="left:700px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:200px; width:340px; height:20px">VFS xattr</div>
+<div class="VMFS_read-border" title="VMFS read" style="left:700px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:735px; top:225px; width:340px; height:20px">VMFS read</div>
+<div class="VMFS_readdir-border" title="VMFS readdir" style="left:1050px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:0px; width:340px; height:20px">VMFS readdir</div>
+<div class="VMFS_stat-border" title="VMFS stat" style="left:1050px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:25px; width:340px; height:20px">VMFS stat</div>
+<div class="action_dependency_checking-border" title="action dependency checking" style="left:1050px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:50px; width:340px; height:20px">action dependency checking</div>
+<div class="action_execution-border" title="action execution" style="left:1050px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:75px; width:340px; height:20px">action execution</div>
+<div class="action_graph_dependency-border" title="action graph dependency" style="left:1050px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:100px; width:340px; height:20px">action graph dependency</div>
+<div class="action_processing-border" title="action processing" style="left:1050px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:125px; width:340px; height:20px">action processing</div>
+<div class="action_resource_lock-border" title="action resource lock" style="left:1050px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:150px; width:340px; height:20px">action resource lock</div>
+<div class="action_resource_release-border" title="action resource release" style="left:1050px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:175px; width:340px; height:20px">action resource release</div>
+<div class="build_phase_marker-border" title="build phase marker" style="left:1050px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:200px; width:340px; height:20px">build phase marker</div>
+<div class="complete_action_execution-border" title="complete action execution" style="left:1050px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1085px; top:225px; width:340px; height:20px">complete action execution</div>
+<div class="configured_target_creation-border" title="configured target creation" style="left:1400px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:0px; width:340px; height:20px">configured target creation</div>
+<div class="construct_include_paths-border" title="construct include paths" style="left:1400px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:25px; width:340px; height:20px">construct include paths</div>
+<div class="cpu_counters-border" title="cpu counters" style="left:1400px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:50px; width:340px; height:20px">cpu counters</div>
+<div class="critical_path-border" title="critical path" style="left:1400px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:75px; width:340px; height:20px">critical path</div>
+<div class="critical_path_component-border" title="critical path component" style="left:1400px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:100px; width:340px; height:20px">critical path component</div>
+<div class="exception-border" title="exception" style="left:1400px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:125px; width:340px; height:20px">exception</div>
+<div class="execution_queue_submission-border" title="execution queue submission" style="left:1400px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:150px; width:340px; height:20px">execution queue submission</div>
+<div class="for_testing_only-border" title="for testing only" style="left:1400px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:175px; width:340px; height:20px">for testing only</div>
+<div class="gc_notification-border" title="gc notification" style="left:1400px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:200px; width:340px; height:20px">gc notification</div>
+<div class="general_information-border" title="general information" style="left:1400px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1435px; top:225px; width:340px; height:20px">general information</div>
+<div class="globbing-border" title="globbing" style="left:1750px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:0px; width:340px; height:20px">globbing</div>
+<div class="include_scanner-border" title="include scanner" style="left:1750px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:25px; width:340px; height:20px">include scanner</div>
+<div class="inclusion_parse-border" title="inclusion parse" style="left:1750px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:50px; width:340px; height:20px">inclusion parse</div>
+<div class="local_action_execution-border" title="local action execution" style="left:1750px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:75px; width:340px; height:20px">local action execution</div>
+<div class="local_process_spawn-border" title="local process spawn" style="left:1750px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:100px; width:340px; height:20px">local process spawn</div>
+<div class="locate_relative-border" title="locate relative" style="left:1750px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:125px; width:340px; height:20px">locate relative</div>
+<div class="loop_output_artifacts-border" title="loop output artifacts" style="left:1750px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:150px; width:340px; height:20px">loop output artifacts</div>
+<div class="package_creation-border" title="package creation" style="left:1750px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:175px; width:340px; height:20px">package creation</div>
+<div class="package_validity_check-border" title="package validity check" style="left:1750px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:200px; width:340px; height:20px">package validity check</div>
+<div class="parallel_builder_completion_queue-border" title="parallel builder completion queue" style="left:1750px; top:225px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:1785px; top:225px; width:340px; height:20px">parallel builder completion queue</div>
+<div class="parse_and_hints_results-border" title="parse and hints results" style="left:2100px; top:0px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:0px; width:340px; height:20px">parse and hints results</div>
+<div class="process_results_and_enqueue-border" title="process results and enqueue" style="left:2100px; top:25px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:25px; width:340px; height:20px">process results and enqueue</div>
+<div class="process_scan-border" title="process scan" style="left:2100px; top:50px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:50px; width:340px; height:20px">process scan</div>
+<div class="remote_action_execution-border" title="remote action execution" style="left:2100px; top:75px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:75px; width:340px; height:20px">remote action execution</div>
+<div class="skyframe_evaluator-border" title="skyframe evaluator" style="left:2100px; top:100px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:100px; width:340px; height:20px">skyframe evaluator</div>
+<div class="skyfunction-border" title="skyfunction" style="left:2100px; top:125px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:125px; width:340px; height:20px">skyfunction</div>
+<div class="thread_name-border" title="thread name" style="left:2100px; top:150px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:150px; width:340px; height:20px">thread name</div>
+<div class="thread_wait-border" title="thread wait" style="left:2100px; top:175px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:175px; width:340px; height:20px">thread wait</div>
+<div class="update_action_information-border" title="update action information" style="left:2100px; top:200px; width:20px; height:20px; z-index:0"></div>
+<div style="position:absolute; left:2135px; top:200px; width:340px; height:20px">update action information</div>
+</div>
+<a name="Statistics"></a><h2>Statistics</h2>
+<div class="phase-statistics">
+  <h3>Phase Summary Information</h3>
+  <table class="phase-statistics">
+    <tr>
+      <td class="left">Total launch phase time</td><td>6.00 ms</td><td>0.03%</td>
+    </tr>
+    <tr>
+      <td class="left">Total init phase time</td><td>145 ms</td><td>0.75%</td>
+    </tr>
+    <tr>
+      <td class="left">Total loading phase time</td><td>4.31 ms</td><td>0.02%</td>
+    </tr>
+    <tr>
+      <td class="left">Total analysis phase time</td><td>25.6 ms</td><td>0.13%</td>
+    </tr>
+    <tr>
+      <td class="left">Total preparation phase time</td><td>8.82 ms</td><td>0.05%</td>
+    </tr>
+    <tr>
+      <td class="left">Total execution phase time</td><td>19.041 s</td><td>98.99%</td>
+    </tr>
+    <tr>
+      <td class="left">Total finish phase time</td><td>4.91 ms</td><td>0.03%</td>
+    </tr>
+    <tr>
+      <td class="left">Total run time</td><td>19.236 s</td><td>100.00%</td>
+    </tr>
+  </table>
+</div>
+<div class="phase-statistics">
+  <h3>Init Phase Information</h3>
+  <table class="phase-statistics">
+    <tr><td class="left" colspan="3">Total init time</td><td>145 ms</td>
+    </tr>
+    <tr><td class="left" colspan="4">Total time (across all threads) spent on:</td></tr>
+    <tr><th>Type</th><th>Total</th><th>Count</th><th>Average</th></tr>
+    <tr class="phase-task-statistics"><td>INFO</td><td>98.10%</td><td>71</td><td>2.01 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_STAT</td><td>0.01%</td><td>5</td><td>0.00 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_DIR</td><td>0.02%</td><td>1</td><td>0.02 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_DELETE</td><td>0.03%</td><td>1</td><td>0.04 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_WRITE</td><td>0.03%</td><td>3</td><td>0.01 ms</td></tr>
+  </table>
+</div>
+<div class="phase-statistics">
+  <h3>Loading Phase Information</h3>
+  <table class="phase-statistics">
+    <tr><td class="left" colspan="3">Total loading time</td><td>4.31 ms</td>
+    </tr>
+    <tr><td class="left" colspan="4">Total time (across all threads) spent on:</td></tr>
+    <tr><th>Type</th><th>Total</th><th>Count</th><th>Average</th></tr>
+    <tr class="phase-task-statistics"><td>INFO</td><td>99.11%</td><td>2</td><td>2.14 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_WRITE</td><td>0.27%</td><td>1</td><td>0.01 ms</td></tr>
+  </table>
+</div>
+<div class="phase-statistics">
+  <h3>Analysis Phase Information</h3>
+  <table class="phase-statistics">
+    <tr><td class="left" colspan="3">Total analysis time</td><td>25.6 ms</td>
+    </tr>
+    <tr><td class="left" colspan="4">Total time (across all threads) spent on:</td></tr>
+    <tr><th>Type</th><th>Total</th><th>Count</th><th>Average</th></tr>
+    <tr class="phase-task-statistics"><td>INFO</td><td>26.43%</td><td>62</td><td>0.12 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_STAT</td><td>0.26%</td><td>12</td><td>0.01 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_OPEN</td><td>0.12%</td><td>1</td><td>0.03 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_WRITE</td><td>0.13%</td><td>2</td><td>0.02 ms</td></tr>
+    <tr class="phase-task-statistics"><td>SKYFRAME_EVAL</td><td>59.76%</td><td>1</td><td>17.3 ms</td></tr>
+    <tr class="phase-task-statistics"><td>SKYFUNCTION</td><td>11.60%</td><td>49</td><td>0.07 ms</td></tr>
+  </table>
+</div>
+<div class="phase-statistics">
+  <h3>Execution Phase Information</h3>
+  <table class="phase-statistics">
+    <tr><td class="left" colspan="3">Total preparation time</td><td>8.82 ms</td>
+    </tr>
+    <tr><td class="left" colspan="3">Total execution time</td><td>19.041 s</td>
+    </tr>
+    <tr><td class="left" colspan="3">Total finish time</td><td>4.91 ms</td>
+    </tr>
+    <tr><td class="left" colspan="3">Actual execution time</td><td>19.041 s</td>
+    </tr>
+    <tr><td class="left" colspan="4">Total time (across all threads) spent on:</td></tr>
+    <tr><th>Type</th><th>Total</th><th>Count</th><th>Average</th></tr>
+    <tr class="phase-task-statistics"><td>ACTION</td><td>0.01%</td><td>8</td><td>0.45 ms</td></tr>
+    <tr class="phase-task-statistics"><td>ACTION_CHECK</td><td>0.05%</td><td>109</td><td>0.28 ms</td></tr>
+    <tr class="phase-task-statistics"><td>ACTION_EXECUTE</td><td>31.18%</td><td>8</td><td>2.289 s</td></tr>
+    <tr class="phase-task-statistics"><td>INFO</td><td>0.06%</td><td>10</td><td>3.34 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_STAT</td><td>0.03%</td><td>3313</td><td>0.01 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_DIR</td><td>0.01%</td><td>390</td><td>0.02 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_READLINK</td><td>0.00%</td><td>6</td><td>0.01 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_MD5</td><td>2.31%</td><td>14</td><td>97.1 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_DELETE</td><td>0.17%</td><td>1325</td><td>0.08 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_OPEN</td><td>0.00%</td><td>19</td><td>0.03 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_READ</td><td>0.24%</td><td>69562</td><td>0.00 ms</td></tr>
+    <tr class="phase-task-statistics"><td>VFS_WRITE</td><td>0.01%</td><td>1724</td><td>0.00 ms</td></tr>
+    <tr class="phase-task-statistics"><td>WAIT</td><td>0.00%</td><td>7</td><td>0.00 ms</td></tr>
+    <tr class="phase-task-statistics"><td>SKYFRAME_EVAL</td><td>32.36%</td><td>1</td><td>19.007 s</td></tr>
+    <tr class="phase-task-statistics"><td>SKYFUNCTION</td><td>33.81%</td><td>125</td><td>159 ms</td></tr>
+  </table>
+<table>
+  <tr><td colspan="4">Critical path (18.979 s):</td></tr>
+  <tr><th>Id</th><th>Time</th><th>Share</th><th>Description</th></tr>
+  <tr><td>503</td><td style="text-align: right">580&nbsp;ms</td><td>3.06%</td><td>action 'Executing genrule //src bazel-bin'</td></tr>
+  <tr><td>502</td><td style="text-align: right">720&nbsp;ms</td><td>3.79%</td><td>action 'Executing genrule //src bazel-bin_jdk_allmodules'</td></tr>
+  <tr><td>501</td><td style="text-align: right">11.310&nbsp;s</td><td>59.59%</td><td>action 'Executing genrule //src package-zip_jdk_allmodules'</td></tr>
+  <tr><td>500</td><td style="text-align: right">1.251&nbsp;s</td><td>6.59%</td><td>action 'Executing genrule //src install_base_key-file_jdk_allmodules'</td></tr>
+  <tr><td>499</td><td style="text-align: right">277&nbsp;ms</td><td>1.46%</td><td>action 'Building deploy jar src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar'</td></tr>
+  <tr><td>498</td><td style="text-align: right">1.03&nbsp;ms</td><td>0.01%</td><td>runfiles for //src/main/java/com/google/devtools/build/lib bazel/BazelServer</td></tr>
+  <tr><td>497</td><td style="text-align: right">4.841&nbsp;s</td><td>25.51%</td><td>action 'Building src/main/java/com/google/devtools/build/lib/libbuild-base.jar (491 source files) and running annotation processors (SkylarkCallableProcessor, SkylarkConfigurationFieldProcessor, AutoCodecProcessor, OptionProcessor, AutoAnnotationProcessor, AutoValueProcessor)'</td></tr>
+</table>
+</div>
+<div style="clear: both;"></div>
+<a name='starlark_stats'/>
+<h3>Starlark Statistics</h3>
+<p>All duration columns in milliseconds, except where noted otherwise.</p>
+<h4>User-Defined function execution time</h4>
+<div class="starlark-histogram" id="user-histogram">
+  <div class="starlark-chart" id="user-chart"></div>
+  <button id="user-close">Hide</button>
+</div>
+<div class="starlark-table" id="user_function_stats"></div>
+<h4>Compiled function execution time</h4>
+<div class="starlark-histogram" id="compiled-histogram">
+  <div class="starlark-chart" id="compiled-chart"></div>
+  <button id="user-close">Hide</button>
+</div>
+<div class="starlark-table" id="compiled_function_stats"></div>
+<h4>Builtin function execution time</h4>
+<div class="starlark-histogram" id="builtin-histogram">
+  <div class="starlark-chart" id="builtin-chart"></div>
+  <button id="builtin-close">Hide</button>
+</div>
+<div class="starlark-table" id="builtin_function_stats"></div>
+  </body>
+</html>

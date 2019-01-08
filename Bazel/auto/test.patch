@@ -1,0 +1,12 @@
+diff --git a/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java b/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java
+index edb15520a2..f68733908c 100644
+--- a/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java
++++ b/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java
+@@ -14,6 +14,7 @@
+ 
+ package com.google.devtools.build.lib.rules;
+ 
++
+ import com.google.devtools.build.lib.actions.MutableActionGraph.ActionConflictException;
+ import com.google.devtools.build.lib.analysis.BaseRuleClasses;
+ import com.google.devtools.build.lib.analysis.ConfiguredTarget;
