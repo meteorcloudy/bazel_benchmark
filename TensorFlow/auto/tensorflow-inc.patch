@@ -1,0 +1,24 @@
+diff --git a/tensorflow/core/ops/array_grad.cc b/tensorflow/core/ops/array_grad.cc
+index 3d03bc1d5f..04a091dc32 100644
+--- a/tensorflow/core/ops/array_grad.cc
++++ b/tensorflow/core/ops/array_grad.cc
+@@ -17,6 +17,7 @@ limitations under the License.
+ #include "tensorflow/core/framework/function.h"
+ #include "tensorflow/core/lib/core/errors.h"
+ 
++
+ namespace tensorflow {
+ 
+ typedef FunctionDefHelper FDH;
+diff --git a/tensorflow/python/ops/tensor_array_grad.py b/tensorflow/python/ops/tensor_array_grad.py
+index d341349804..8ade42ca93 100644
+--- a/tensorflow/python/ops/tensor_array_grad.py
++++ b/tensorflow/python/ops/tensor_array_grad.py
+@@ -22,6 +22,7 @@ from tensorflow.python.ops import tensor_array_ops
+ 
+ # TODO(b/31222613): These ops may be differentiable, and there may be
+ # latent bugs here.
++
+ ops.NotDifferentiable("TensorArray")
+ ops.NotDifferentiable("TensorArrayGrad")
+ ops.NotDifferentiable("TensorArraySize")

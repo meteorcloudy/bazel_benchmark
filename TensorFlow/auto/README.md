@@ -12,8 +12,8 @@
 # Command
 
 ```sh
-$ python3 ../bazel_benchmark/tools/bazel_benchmark.py //tensorflow/tools/pip_package:build_pip_package --build_flag="--config=opt" --profile_type=json-profile --project_name=TensorFlow --profile_data_dir=../bazel_benchmark/TensorFlow/auto/Linux --setup_command='yes "" | ./configure' --build_flag="--distinct_host_configuration=false"
+$ python3 ../bazel_benchmark/tools/bazel_benchmark.py //tensorflow/tools/pip_package:build_pip_package --build_flag="--config=opt" --profile_type=json-profile --project_name=TensorFlow --profile_data_dir=../bazel_benchmark/TensorFlow/auto/Linux --setup_command='yes "" | ./configure' --build_flag="--distinct_host_configuration=false" --patch_file=tensorflow-inc.patch
 
-$ python3 ../bazel_benchmark/tools/bazel_benchmark.py //tensorflow/tools/pip_package:build_pip_package --build_flag="--config=opt" --profile_type=analyze-profile --project_name=TensorFlow --profile_data_dir=../bazel_benchmark/TensorFlow/auto/Linux --setup_command='yes "" | ./configure' --build_flag="--distinct_host_configuration=false"
+$ python3 ../bazel_benchmark/tools/bazel_benchmark.py //tensorflow/tools/pip_package:build_pip_package --build_flag="--config=opt" --profile_type=analyze-profile --project_name=TensorFlow --profile_data_dir=../bazel_benchmark/TensorFlow/auto/Linux --setup_command='yes "" | ./configure' --build_flag="--distinct_host_configuration=false" --patch_file=tensorflow-inc.patch
 ```
 
