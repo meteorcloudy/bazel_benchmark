@@ -42,6 +42,18 @@ def bazel_version():
     execute_command([BAZEL] + STARTUP_FLAGS + ["version"])
 
 
+def json_profile(target, output_base, profile_output_dir, build_type):
+    profile_file = os.path.join(output_base, "command.profile")
+    bazel_build(target, ["--experimental_generate_json_trace_profile"])
+    shutil.move(profile_file, os.path.join(profile_output_dir, PROJECT_NAME + ("-%s.json" % build_type)))
+
+
+def analyze_profile(target, output_base, profile_output_dir, build_type):
+    profile_file = os.path.join(profile_output_dir, PROJECT_NAME + ("-%s.profile" % build_type))
+    bazel_build(target, ["--profile=" + profile_file])
+    bazel_analyze(profile_file)
+
+
 def run_benchmark(target, profile_type, patch_file, profile_data_dir):
 
     if profile_data_dir:
@@ -49,55 +61,34 @@ def run_benchmark(target, profile_type, patch_file, profile_data_dir):
     else:
         profile_output_dir = tempfile.mkdtemp()
 
+    output_base = subprocess.check_output([BAZEL] + STARTUP_FLAGS + ["info", "output_base"]).decode("utf-8").strip()
+
+    profile = None
     if profile_type == "json-profile":
+        profile = json_profile
         profile_output_dir = os.path.join(profile_output_dir, "json-profile")
-        os.makedirs(profile_output_dir, exist_ok = True)
-
-        output_base = subprocess.check_output([BAZEL] + STARTUP_FLAGS + ["info", "output_base"]).decode("utf-8").strip()
-        profile_file = os.path.join(output_base, "command.profile")
-
-        bazel_clean(expunge = True)
-        bazel_version() # To avoid launch time
-        bazel_build(target, ["--experimental_generate_json_trace_profile"])
-        shutil.move(profile_file, os.path.join(profile_output_dir, PROJECT_NAME + "-clean-expunge-build.json"))
-
-        bazel_clean()
-        bazel_build(target, ["--experimental_generate_json_trace_profile"])
-        shutil.move(profile_file, os.path.join(profile_output_dir, PROJECT_NAME + "-clean-build.json"))
-
-        if patch_file:
-            execute_command(["patch", "-i", patch_file])
-        else:
-            execute_command(["git", "reset", "HEAD~1", "--hard"])
-        bazel_build(target, ["--experimental_generate_json_trace_profile"])
-        shutil.move(profile_file, os.path.join(profile_output_dir, PROJECT_NAME + "-incremental-build.json"))
-
     elif profile_type == "analyze-profile":
+        profile = analyze_profile
         profile_output_dir = os.path.join(profile_output_dir, "analyze-profile")
-        os.makedirs(profile_output_dir, exist_ok = True)
 
-        bazel_clean(expunge = True)
-        bazel_version() # To avoid launch time
-        profile_file = os.path.join(profile_output_dir, PROJECT_NAME + "-clean-expunge-build.profile")
-        bazel_build(target, ["--profile=" + profile_file])
-        bazel_analyze(profile_file)
+    os.makedirs(profile_output_dir, exist_ok = True)
 
-        bazel_clean()
-        profile_file = os.path.join(profile_output_dir, PROJECT_NAME + "-clean-build.profile")
-        bazel_build(target, ["--profile=" + profile_file])
-        bazel_analyze(profile_file)
+    bazel_clean(expunge = True)
+    bazel_version() # To avoid launch time
+    profile(target, output_base, profile_output_dir, "clean-expunge-build")
 
-        if patch_file:
-            execute_command(["patch", "-p1", "-i", patch_file])
-        else:
-            execute_command(["git", "checkout", "HEAD~1"])
-        profile_file = os.path.join(profile_output_dir, PROJECT_NAME + "-incremental-build.profile")
-        bazel_build(target, ["--profile=" + profile_file])
-        bazel_analyze(profile_file)
-        if patch_file:
-            execute_command(["git", "checkout", "-f"])
-        else:
-            execute_command(["git", "checkout", "master"])
+    bazel_clean()
+    profile(target, output_base, profile_output_dir, "clean-build")
+
+    if patch_file:
+        execute_command(["patch", "-p1", "-i", patch_file])
+    else:
+        execute_command(["git", "checkout", "HEAD~1"])
+    profile(target, output_base, profile_output_dir, "incremental-build")
+    if patch_file:
+        execute_command(["git", "checkout", "-f"])
+    else:
+        execute_command(["git", "checkout", "master"])
 
     eprint("Check profile results under %s" % profile_output_dir)
 

@@ -12,6 +12,8 @@
 # Command
 
 ```sh
-$ python3 bazel_benchmark/tools/bazel_benchmark.py //src:bazel --project_name=Bazel --profile_type=analyze-profile --profile_data_dir=bazel_benchmark/Bazel --patch_file=./test.patch
+$ python ../../bazel_benchmark/tools/bazel_benchmark.py //src:bazel --profile_type=json-profile --project_name=Bazel --profile_data_dir=../../bazel_benchmark/Bazel/auto/Windows --patch_file=../../bazel_benchmark/Bazel/auto/bazel-inc.patch
+
+$ python ../../bazel_benchmark/tools/bazel_benchmark.py //src:bazel --profile_type=analyze-profile --project_name=Bazel --profile_data_dir=../../bazel_benchmark/Bazel/auto/Windows --patch_file=../../bazel_benchmark/Bazel/auto/bazel-inc.patch
 ```
 
