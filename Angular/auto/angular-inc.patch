@@ -1,0 +1,12 @@
+diff --git a/packages/core/src/render3/assert.ts b/packages/core/src/render3/assert.ts
+index 3b7bc9940..bc970393e 100644
+--- a/packages/core/src/render3/assert.ts
++++ b/packages/core/src/render3/assert.ts
+@@ -13,6 +13,7 @@ import {LView} from './interfaces/view';
+ // The functions in this file verify that the assumptions we are making
+ // about state in an instruction are correct before implementing any logic.
+ // They are meant only to be called in dev mode as sanity checks.
++//
+ 
+ export function assertNumber(actual: any, msg: string) {
+   if (typeof actual != 'number') {
