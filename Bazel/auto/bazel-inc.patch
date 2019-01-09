@@ -1,3 +1,15 @@
+diff --git a/src/main/cpp/blaze.cc b/src/main/cpp/blaze.cc
+index 10dd0c9eb2..50a6a86b18 100644
+--- a/src/main/cpp/blaze.cc
++++ b/src/main/cpp/blaze.cc
+@@ -25,6 +25,7 @@
+ // - mutual exclusion between batch invocations.
+ #include "src/main/cpp/blaze.h"
+ 
++
+ #include <assert.h>
+ #include <ctype.h>
+ #include <fcntl.h>
 diff --git a/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java b/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java
 index edb15520a2..f68733908c 100644
 --- a/src/main/java/com/google/devtools/build/lib/rules/ToolchainType.java

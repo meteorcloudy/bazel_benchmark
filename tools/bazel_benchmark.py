@@ -15,6 +15,7 @@ def eprint(*args, **kwargs):
     """
     Print to stderr and flush (just in case).
     """
+    print()
     print(*args, flush=True, file=sys.stderr, **kwargs)
 
 
