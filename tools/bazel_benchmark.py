@@ -25,7 +25,7 @@ def execute_command(args, shell=False, fail_if_nonzero=True):
 
 
 def bazel_build(target, extra_build_flags=[]):
-    execute_command([BAZEL] + STARTUP_FLAGS + ["build"] + BUILD_FLAGS + extra_build_flags + [target])
+    execute_command([BAZEL] + STARTUP_FLAGS + ["build", "--announce_rc"] + BUILD_FLAGS + extra_build_flags + [target])
 
 
 def bazel_clean(expunge=False):
