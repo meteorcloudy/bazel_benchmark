@@ -28,7 +28,9 @@ def bazel_build(target, extra_build_flags=[]):
 
 
 def bazel_clean(expunge=False):
-    execute_command([BAZEL] + STARTUP_FLAGS + ["clean"] + (["--expunge"] if expunge else []))
+    while True:
+        if execute_command([BAZEL] + STARTUP_FLAGS + ["clean"] + (["--expunge"] if expunge else []), fail_if_nonzero = False) == 0:
+            break
 
 
 def bazel_analyze(profile):
@@ -48,7 +50,7 @@ def run_benchmark(target, profile_type, patch_file, profile_data_dir):
 
     if profile_type == "json-profile":
         profile_output_dir = os.path.join(profile_output_dir, "json-profile")
-        os.mkdir(profile_output_dir)
+        os.makedirs(profile_output_dir, exist_ok = True)
 
         output_base = subprocess.check_output([BAZEL] + STARTUP_FLAGS + ["info", "output_base"]).decode("utf-8").strip()
         profile_file = os.path.join(output_base, "command.profile")
@@ -71,7 +73,7 @@ def run_benchmark(target, profile_type, patch_file, profile_data_dir):
 
     elif profile_type == "analyze-profile":
         profile_output_dir = os.path.join(profile_output_dir, "analyze-profile")
-        os.mkdir(profile_output_dir)
+        os.makedirs(profile_output_dir, exist_ok = True)
 
         bazel_clean(expunge = True)
         bazel_version() # To avoid launch time
